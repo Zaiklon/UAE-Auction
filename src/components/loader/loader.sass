@@ -1,0 +1,46 @@
+@import '../../styles/breakpoint'
+@import '../../styles/variables'
+
+.loader
+  width: 100%
+  height: 100vh
+  position: fixed
+  background-color: rgba(255,255,255, 0.9)
+  top: 0
+  left: 0
+  z-index: 999999
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  .spinner
+    -webkit-animation: spin 1s linear infinite
+      animation: spin 1s linear infinite
+    border: 3px solid $color--dark-gray
+    border-top: 3px solid $color--red
+    border-radius: 50%
+    height: 75px
+    width: 75px
+
+  span
+    font-size: 25px
+    display: block
+    margin-top: 20px
+
+
+@-webkit-keyframes spin
+  to
+    border-top-color: $color--red
+    -webkit-transform: rotate(360deg)
+    transform: rotate(360deg)
+
+
+
+@keyframes spin
+  to
+    border-top-color: $color--red
+    -webkit-transform: rotate(360deg)
+    transform: rotate(360deg)
+
+
+

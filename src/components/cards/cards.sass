@@ -1,0 +1,75 @@
+@import '../../styles/breakpoint'
+@import '../../styles/variables'
+
+.content-section
+  padding-top: 100px
+  .refresh-btn
+    margin-left: 20px
+    color: black;
+    @include breakpoint(xsmax)
+      margin-left: 0
+      margin-bottom: 15px
+  .filters-btn-section
+    margin-bottom: 50px
+  .filters-btn
+    height: 34px
+    margin-left: 20px
+    background-color: transparent
+    border: 0
+    font-weight: bold
+    color: #b6c1c5
+    transition: 0.5s ease-in-out
+    @include breakpoint(xsmax)
+      margin-left: 0
+      margin-bottom: 15px
+
+    &:hover, &:focus
+      color: $color--black
+      border: 0
+      outline: 0
+  .card
+    display: block
+    border-radius: 5px
+    border: 1px solid $color--light-gray
+    margin-bottom: 20px
+    text-decoration: none
+    position: relative
+    &:hover
+      text-decoration: none
+    &__image
+      width: 100%
+      height: 200px
+      border-top-right-radius: 5px
+      border-top-left-radius: 5px
+    &__body
+      padding: 20px 10px
+      border-bottom: 1px solid $color--light-gray
+      h3
+        color: $color--black
+        margin: 0 0 10px 0
+        height: 26px
+      h4
+        color: $color--green
+        margin: 0
+
+    &__footer
+      padding: 10px
+      display: flex
+      justify-content: space-between
+      align-items: center
+    &__item
+      display: flex
+      justify-content: space-between
+      align-items: center
+      color: $color--black
+      p
+        margin-bottom: 0
+        margin-left: 5px
+    &__like
+      position: absolute
+      top: 10px
+      right: 10px
+      font-size: 25px
+      color: $color--white
+      &--checked
+        color: $color--red

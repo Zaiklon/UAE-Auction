@@ -1,0 +1,11 @@
+@import url("https://fonts.googleapis.com/css?family=Cairo");
+body {
+  margin: 0;
+  background-color: #f7f9fc;
+  font-family: 'Cairo', sans-serif !important;
+}
+
+.no-padding-left {
+  padding-left: 0 !important;
+}
+/*# sourceMappingURL=home.css.map */

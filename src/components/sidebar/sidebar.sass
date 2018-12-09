@@ -1,0 +1,93 @@
+@import '../../styles/breakpoint'
+@import '../../styles/variables'
+
+.sidebar
+  height: 100vh
+  position: fixed
+  left: 0
+  top: 0
+  z-index: 9999
+  transition: 0.5s ease-in-out
+  @include breakpoint(xsmax)
+    top: 50px
+    z-index: 999
+    left: -100%
+  &--mobile
+    left: -100%
+    top: 50px
+    z-index: 999
+  &--opened
+    width: 100%
+    left: 0
+  &__content
+    width: 100%
+    height: 100%
+    display: flex
+  &__collapse-btn
+    margin: 8px 0 8px 15px
+    position: fixed
+    z-index: 9999
+  &__list
+    width: 20%
+    height: 100%
+    background-color: $color--red
+    list-style-type: none
+    color: $color--white
+    padding-left: 0
+    &-item
+      padding: 20px 10px
+      text-align: center
+      transition: 0.5s ease-in-out
+      &:hover, &:focus
+        background-color: $color--light-red
+        a
+          color: $color--red
+      &.active
+        background-color: $color--light-red
+        a
+          color: $color--red
+    &-link
+      color: $color--white
+      text-decoration: none
+      transition: 0.5s ease-in-out
+      &:focus
+        color: $color--white
+  &__filters
+    width: 80%
+    height: 100%
+    background-color: $color--dark-gray
+  &__logo
+    width: 100%
+    height: 50px
+  &__filters-header
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 18.5px 20px
+    color: $color--black
+    border-bottom: 1px solid $color--light-gray
+    p
+      margin-bottom: 0
+  &__filters-content
+    padding: 20px
+  &__filters-content-title
+    margin-bottom: 30px
+  &__filters-content-list
+    padding: 0
+    list-style-type: none
+  &__filters-content-item
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 10px
+    label
+      cursor: pointer
+  &__filters-content-select
+    background-color: transparent
+    margin-top: 20px
+  &__filters-reset
+    background-color: transparent
+    border: 0
+    outline: 0
+    color: $color--red
+    font-weight: bold

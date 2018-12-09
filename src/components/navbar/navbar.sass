@@ -1,0 +1,69 @@
+@import '../../styles/breakpoint'
+@import '../../styles/variables'
+
+.navbar
+  border-radius: 0
+  border: 0
+  background-color: $color--white
+  .container
+    width: auto
+  .navbar-brand
+    padding: 0
+    img
+      width: 200px
+  &-nav
+    li a
+      color: $color--black !important
+      font-weight: 600
+      transition: 0.5s ease-in-out
+      &:hover
+        color: $color--red !important
+    &__icon
+      border-left: 1px solid $color--light-gray
+    &__account
+      a
+        display: flex !important
+        align-items: center
+        img
+          width: 20px
+          height: 20px
+        p
+          margin-bottom: 0
+          margin-right: 20px
+
+@include breakpoint(xsmax)
+  .navbar-header
+    float: none
+
+  .navbar-left,.navbar-right
+    float: none !important
+
+  .navbar-toggle
+    display: block
+
+  .navbar-collapse
+    border-top: 1px solid transparent
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.1)
+
+  .navbar-fixed-top
+    top: 0
+    border-width: 0 0 1px
+
+  .navbar-collapse.collapse
+    display: none!important
+
+  .navbar-nav
+    float: none!important
+    margin-top: 7.5px
+
+  .navbar-nav>li
+    float: none
+
+  .navbar-nav>li>a
+    padding-top: 10px
+    padding-bottom: 10px
+
+  .collapse.in
+    display: block !important
+    overflow: auto !important
+
