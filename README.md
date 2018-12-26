@@ -1,32 +1,29 @@
--
-This project bootStrapped with Creat-React-App.. 
-[Create React App](https://github.com/facebookincubator/create-react-app).
 
-Here you will find some information about, How to perform common Task,
+This project was bootstrapped with Create React App.
+Available Scripts In the project directory, you can run:
 
-1- Run `npm install` to Install The Dependencies.
-2- Run `npm start` to Start The App.
-Runs the app in the development mode.
-Open http://localhost:3000 to view it in the browser.
+npm start
+Runs the app in the development mode. Open http://localhost:3000 to view it in the browser.
 
-------------------------------------------------------------------------------------------------------
+The page will reload if you make edits. You will also see any lint errors in the console.
+
+npm run build
+Builds the app for production to the build folder. It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes. Your app is ready to be deployed!
+
 Features:
-
-- Create-react-app to start a very simple application..
-- React-intl for translation.
-- Axios to make requests.
-- React-bootstrap to handle the UI of the page.
-- Eslint.
-- Lodash for some make sorting and range to display specific number of cards.
-- Jquery to handle scrolling to load more data.
-- Prettier.
-
-------------------------------------------------------------------------------------------------------
-
+Create-react-app: to start application, it's make me focus on code, not build tools.
+React-intl: for translation content to be easily readable and usable by all kinds of people across the globe, s
+Storybook: to development environment for UI components. It allows the browse a component library, view the different states of each component, and interactively develop and test components.
+Axios: to make request information from the API, Call the API Endpoint and Output it so we can see it.
+React-bootstrap: to handle UI Components, UI of the page, Also because Bootstrap depends on jQuery for powering certain UI components, Row and Column components.
+Eslint: to discover problems in the code without executing it, It's written using Node.js to provide a fast runtime environment and easy installation via npm.
+Lodash: for some make sorting and range to display specific number of cards.
+Responsive: design is a way to put together a website so that it automatically scales its content and elements to match the screen size on which it is viewed. It keeps images from being larger than the screen width, and prevents visitors on Mobile Devices from needing to do extra work to read your content.
+Jquery: for handle scrolling to load more data dynamically, Cards content appears only when user scrolls down to the bottom of the page, It serves as a smart way for dynamic websites to load only the data required to fill the window.
+Prettier: for formatting and keeping code organized.
 Project structure:
-
-- Config - Includes the webpack.
-- Node_modules - includes all dependencies.
-- Public and scripts.
-- Src - includes all components, views and styles.
-------------------------------------------------------------------------------------------------------
+Public and Scripts.
+Src includes All Components, Views and Styles.
+Node_Modules includes All Dependencies.
