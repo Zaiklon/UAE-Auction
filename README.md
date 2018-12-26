@@ -1,5 +1,5 @@
 
-This project was bootstrapped with Create React App.
+### This project was bootstrapped with Create React App.
 Available Scripts In the project directory, you can run:
 
 npm start
@@ -12,7 +12,7 @@ Builds the app for production to the build folder. It correctly bundles React in
 
 The build is minified and the filenames include the hashes. Your app is ready to be deployed!
 
-Features:
+### Features:
 Create-react-app: to start application, it's make me focus on code, not build tools.
 React-intl: for translation content to be easily readable and usable by all kinds of people across the globe, s
 Storybook: to development environment for UI components. It allows the browse a component library, view the different states of each component, and interactively develop and test components.
@@ -23,7 +23,7 @@ Lodash: for some make sorting and range to display specific number of cards.
 Responsive: design is a way to put together a website so that it automatically scales its content and elements to match the screen size on which it is viewed. It keeps images from being larger than the screen width, and prevents visitors on Mobile Devices from needing to do extra work to read your content.
 Jquery: for handle scrolling to load more data dynamically, Cards content appears only when user scrolls down to the bottom of the page, It serves as a smart way for dynamic websites to load only the data required to fill the window.
 Prettier: for formatting and keeping code organized.
-Project structure:
+### Project structure:
 Public and Scripts.
 Src includes All Components, Views and Styles.
 Node_Modules includes All Dependencies.
